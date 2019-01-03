@@ -1,2 +1,3 @@
 bdd100k/
 .vscode/
+__pycache__/
