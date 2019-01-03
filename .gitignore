@@ -1,3 +1,4 @@
 bdd100k/
 .vscode/
 __pycache__/
+*.pkl

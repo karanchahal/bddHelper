@@ -42,17 +42,17 @@ def plotBoundingBoxWithText(plt,ax,bbox,name):
     
     # bounding box
     print("Bounding Box: ",bbox[0],bbox[1],bbox[2],bbox[3])
-    rect = patches.Rectangle((bbox[0],bbox[1]),bbox[2],bbox[3],linewidth=2,edgecolor='w',facecolor='none')
+    rect = patches.Rectangle((bbox[0],bbox[1]),bbox[2],bbox[3],linewidth=0.5,edgecolor='w',facecolor='none')
     # categoryKey = int(category)-1
     
     # generating text box
     # name = coco.dataset['categories'][categoryKey]['name']
-    text = plt.text(bbox[0]+10,bbox[1]+20, name,color='white', bbox=dict(facecolor='red', alpha=0.4),weight='bold')
+    # text = plt.text(bbox[0]+10,bbox[1]+20, name,color='white', bbox=dict(facecolor='red', alpha=0.4),weight='bold')
     
     patch = ax.add_patch(rect)
     
-    drawOutline(patch)
-    drawOutline(text)
+    # drawOutline(patch)
+    # drawOutline(text)
 
 def plotAnchors(plt,ax,bbox):
   '''
