@@ -22,7 +22,7 @@ def getBbox(bbox):
 BASE_PATH = './bdd100k'
 labels = '/labels'
 imagesPath = '/images/100k/train/'
-train_file = '/bdd100k_labels_images_train.json'
+train_file = '/bdd100k_labels_images_val.json'
 # train_file = '/train_sample.json'
 trafficLightImages = []
 # train_file = '/train_sample.json'
@@ -52,6 +52,6 @@ with open(BASE_PATH + labels + train_file) as f:
             # plt.show()
 print("Total Length of traffic lights list: ", len(trafficLightImages))
 
-with open('trafficLights.pkl','wb') as f:
+with open('trafficLightsVal.pkl','wb') as f:
     print('pickling')
     pickle.dump(trafficLightImages,f)
