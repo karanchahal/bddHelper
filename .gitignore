@@ -2,4 +2,5 @@ bdd100k/
 .vscode/
 __pycache__/
 *.pkl
-trafficLightsDataset*
+*trafficLightsDataset*
+*model.ckpt*
